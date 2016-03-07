@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### VirtualEnv template
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
@@ -11,6 +12,8 @@
 pyvenv.cfg
 pip-selfcheck.json
 ### Python template
+=======
+>>>>>>> a10abdd28836472bbf5cc6f6873098e7fb4d4dea
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -56,6 +59,10 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+<<<<<<< HEAD
+=======
+.hypothesis/
+>>>>>>> a10abdd28836472bbf5cc6f6873098e7fb4d4dea
 
 # Translations
 *.mo
@@ -70,4 +77,9 @@ docs/_build/
 # PyBuilder
 target/
 
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
+=======
+#Ipython Notebook
+.ipynb_checkpoints
+>>>>>>> a10abdd28836472bbf5cc6f6873098e7fb4d4dea
