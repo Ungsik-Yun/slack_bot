@@ -4,5 +4,5 @@ from slackbot.bot import listen_to, respond_to
 
 
 @respond_to("!test", re.IGNORECASE)
-def roll_dice(msg):
+def test_func(msg):
     msg.reply("test successful!")
