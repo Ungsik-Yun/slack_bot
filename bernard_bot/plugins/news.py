@@ -11,10 +11,10 @@ import random
 @listen_to("!news (.*)", re.IGNORECASE)
 def search_news(msg, q):
     url = "https://openapi.naver.com/v1/search/news.xml?query="
-    url += q
+    url += '"' + q + '"'
     headers = {
         'X-Naver-Client-Id': os.environ['naver_client_id'],
-        'X-Naver-Client-Secret': os.environ['naver_client_id']
+        'X-Naver-Client-Secret': os.environ['naver_client_secret']
     }
 
     r = requests.get(url, headers=headers)
