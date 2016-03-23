@@ -22,6 +22,7 @@ def search_news(msg, q):
 
     for i in parsed['rss']['channel']['item']:
         msg.reply(i['title'])
+        msg.reply(i['description'])
         msg.reply(i['link'])
         # msg.reply(i['originallink'])
 
@@ -41,5 +42,6 @@ def search_news(msg, q):
 
     for i in parsed['rss']['channel']['item']:
         msg.reply(i['title'])
+        msg.reply(i['description'])
         msg.reply(i['link'])
-        msg.reply(i['originallink'])
+        # msg.reply(i['originallink'])
