@@ -1,4 +1,6 @@
-API_TOKEN = "xoxb-19770709334-Xhu6u3e9PEoV71GsareWXwmd"
+import os
+
+API_TOKEN = os.environ['bot_api_token']
 
 
 PLUGINS = [
