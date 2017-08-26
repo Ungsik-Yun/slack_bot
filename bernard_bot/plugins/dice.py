@@ -95,7 +95,7 @@ def select_random_from_list(msg, n, l):
     if n > len(l2):
         l3 = l2
     else:
-        l3 = [i.strip() for i in random.sample(l2, n)]
+        l3 = ["`"+i.strip()+"`" for i in random.sample(l2, n)]
 
     msg.reply("%s" % ", ".join(l3))
 
@@ -103,15 +103,15 @@ def select_random_from_list(msg, n, l):
 @respond_to("!rand help", re.IGNORECASE)
 def rand_help(msg):
     msg.reply("""```
-    주어진 목록에서 랜덤으로 몇개를 뽑아냅니다.
-    !rand 1|2|3
-    위의 예제는 1,2,3 중 하나를 골라서 돌려줍니다.
-    !rand 4 1|2|3|5|6|7|8
-    위의 예제는 1,2,3,4,5,6,7,8 중에서 4개를 골라서 돌려줍니다.
-    
-    편의상 예시는 숫자로 했지만 다음의 경우처럼 문자열도 가능합니다
-    !rand 2 오징어|문어|고등어
-    ```""")
+주어진 목록에서 랜덤으로 몇개를 뽑아냅니다. 단어 목록은 | (버티컬 바)로 구별되어있습니다.
+!rand 1|2|3
+위의 예제는 1,2,3 중 하나를 골라서 돌려줍니다.
+!rand 4 1|2|3|5|6|7|8
+위의 예제는 1,2,3,4,5,6,7,8 중에서 4개를 골라서 돌려줍니다.
+
+편의상 예시는 숫자로 했지만 다음의 경우처럼 문자열도 가능합니다
+!rand 2 오징어|문어|고등어
+```""")
 
 
 @respond_to("!help", re.IGNORECASE)
