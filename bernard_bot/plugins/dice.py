@@ -5,7 +5,7 @@ import random
 
 
 # @listen_to("!주사위 (\d*)?d?(\d+)?", re.IGNORECASE)
-@listen_to("!roll ?(\d*d\d*?(\+\d*))?", re.IGNORECASE)
+@listen_to("!roll ?(\d*d\d+.*)?", re.IGNORECASE)
 def roll_dice(msg, roll_exp):
     # msg.reply("DEBUG MODE--")
     # msg.reply(roll_exp)
