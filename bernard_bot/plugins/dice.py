@@ -83,7 +83,7 @@ def roll_dice(msg, roll_exp):
         msg.reply("수정치 적용: %d" % modified_result)
 
 
-@listen_to("!rand ?(\d*)? .+", re.IGNORECASE)
+@listen_to("!rand ?(\d*)? (.*)", re.IGNORECASE)
 def select_random_from_list(msg, n, l):
     if n is None or n == '' or int(n) <= 0:
         n = 1
